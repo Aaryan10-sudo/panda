@@ -1,0 +1,10 @@
+POST http://localhost:3000/test/
+Content-Type: application/json
+
+{
+    "name":"Parle G",
+    "description":"This is just a test",
+    "price": 10.00,
+    "category":"biscuit",
+    "stock":100
+}

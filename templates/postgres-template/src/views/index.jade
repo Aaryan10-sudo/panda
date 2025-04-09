@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  .container(style='text-align: center; font-family: Arial, sans-serif; padding: 20px; background: url(/images/panda-bg.jpg) no-repeat center center; background-size: cover;')
+    h1 Hello! Welcome to the panda server 
+    p Relax, Unwind, and Embrace the Panda Vibes! 
+    
+    .image-container(style='margin-top: 20px;')
+      img(src='/images/panda.gif' alt='Panda' style='width: 200px; transition: transform 0.3s ease-in-out;' onmouseover='this.style.transform="scale(1.1)"' onmouseout='this.style.transform="scale(1)"')
+    
+    button#interactBtn(style='margin-top: 15px; padding: 10px 20px; background-color: black; color: white; border: none; cursor: pointer; font-size: 16px; border-radius: 5px;' onmouseover='this.style.backgroundColor="black"' onmouseout='this.style.backgroundColor="black"') Click Me!
+    p#message
+
+  script.
+    document.getElementById('interactBtn').addEventListener('click', function() {
+      document.getElementById('message').innerText = 'Have a bamboo snack and enjoy! 🐼';
+    });
