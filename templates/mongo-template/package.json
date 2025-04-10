@@ -1,6 +1,6 @@
 {
-  "name": "panda",
-  "version": "1.0.0",
+  "name": "panda-mongo-template",
+  "version": "0.0.0",
   "description": "A backend skeleton...",
   "author": "Aaryan Sharma",
   "private": true,
@@ -24,6 +24,7 @@
     "morgan": "~1.9.1",
     "node-cron": "^3.0.3",
     "nodemailer": "^6.10.0",
+    "serve-favicon": "^2.5.0",
     "speakeasy": "^2.0.0"
   },
   "devDependencies": {

@@ -1,10 +1,10 @@
 {
   "name": "panda-server",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "main": "index.js",
-  "bin": {
-    "server": "bin/index.js"
-  },
+ "bin": {
+  "panda": "bin/index.js"
+},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

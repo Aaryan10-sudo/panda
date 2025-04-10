@@ -3,11 +3,14 @@ const express = require("express");
 const path = require("path");
 const cookieParser = require("cookie-parser");
 const logger = require("morgan");
+const favicon = require("serve-favicon");
 
 const indexRouter = require("./src/routes/index");
+const userRouter = require("./src/routes/auth.route");
 const usersRouter = require("./src/routes/users");
 
 const app = express();
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')))
 
 app.set("views", path.join(__dirname, "./src/views"));
 app.set("view engine", "jade");
@@ -19,6 +22,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/", indexRouter);
+app.use("/users", userRouter);
 app.use("/users", usersRouter);
 
 app.use(function (req, res, next) {

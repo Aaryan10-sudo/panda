@@ -5,11 +5,13 @@ const express = require("express");
 const path = require("path");
 const cookieParser = require("cookie-parser");
 const logger = require("morgan");
+const favicon = require("serve-favicon");
 
 const indexRouter = require("./src/routes/index");
 const pandasRouter = require("./src/routes/pandas");
 
 const app = express();
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')))
 // testPostgresConnection();
 // connectMongo();
 

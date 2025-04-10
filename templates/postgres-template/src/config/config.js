@@ -4,7 +4,6 @@ dotenv.config();
 const {
   SMTP_PASSWORD,
   SMTP_EMAIL,
-  MONGO_URI,
   DB_HOST,
   DB_USER,
   DB_PASSWORD,
@@ -12,18 +11,14 @@ const {
   DB_DIALECT,
   SSL,
   DB_PORT,
-  REDIS_PORT,
-  REDIS_HOST,
-  REDIS_PASSWORD,
   CORS_ORIGIN,
-  ADMIN_MAIL,
+  PANDA_MAIL,
   SECRET_KEY,
 } = process.env;
 
 module.exports = {
   SMTP_PASSWORD,
   SMTP_EMAIL,
-  MONGO_URI,
   DB_HOST,
   DB_USER,
   DB_PASSWORD,
@@ -31,10 +26,7 @@ module.exports = {
   DB_DIALECT,
   SSL,
   DB_PORT,
-  REDIS_PORT,
-  REDIS_HOST,
-  REDIS_PASSWORD,
   CORS_ORIGIN,
-  ADMIN_MAIL,
+  PANDA_MAIL,
   SECRET_KEY,
 };
