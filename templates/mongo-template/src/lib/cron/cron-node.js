@@ -5,7 +5,7 @@ const OTP = require("../../model/otp.model");
 
 const deleteUnverifiedUser = async () => {
   try {
-    await Auth.destroy({
+    await Auth.deleteMany({
       where: {
         isVerified: false,
         createdAt: {
