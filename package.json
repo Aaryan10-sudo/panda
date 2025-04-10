@@ -1,6 +1,6 @@
 {
-  "name": "panda-server",
-  "version": "1.0.3",
+  "name": "panda-express-generator",
+  "version": "1.0.0",
   "main": "index.js",
   "bin": {
     "panda": "bin/index.js"
@@ -8,8 +8,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aaryan10-sudo/panda.git"
+  },
   "author": "Aaryan Sharma",
   "license": "ISC",
-  "description": "A backend template 🐼"
+  "bugs": {
+    "url": "https://github.com/Aaryan10-sudo/panda/issues"
+  },
+  "homepage": "https://github.com/Aaryan10-sudo/panda#readme",
+  "description": ""
 }
