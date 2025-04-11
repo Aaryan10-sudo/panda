@@ -9,6 +9,7 @@ const favicon = require("serve-favicon");
 
 const indexRouter = require("./src/routes/index");
 const pandasRouter = require("./src/routes/pandas");
+const { authRouter } = require("./src/routes/auth.route");
 
 const app = express();
 app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')))
@@ -26,6 +27,9 @@ app.use(express.static(path.join(__dirname, "public")));
 
 app.use("/", indexRouter);
 app.use("/pandas", pandasRouter);
+
+//other  router
+app.use("/auth", authRouter);
 
 app.use(function (req, res, next) {
   next(createError(404));

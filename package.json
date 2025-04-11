@@ -18,5 +18,8 @@
     "url": "https://github.com/Aaryan10-sudo/panda/issues"
   },
   "homepage": "https://github.com/Aaryan10-sudo/panda#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "express-rate-limit": "^7.5.0"
+  }
 }

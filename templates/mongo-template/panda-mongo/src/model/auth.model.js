@@ -9,7 +9,7 @@ const authSchema = new Schema(
     email: {
       type: String,
       required: true,
-      unique: true,
+      //  : [true, "Email already exist"],
     },
     role: {
       type: String,
